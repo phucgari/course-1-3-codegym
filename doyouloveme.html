@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Do you love me</h1>
+<button onclick="yes()">yes</button>
+<button onmouseover="notyet()" id="no">no</button>
+</body>
+<script>
+function yes(){
+    alert("<3")
+}
+let button= document.getElementById("no")
+button.style.position="relative"
+button.style.left="0px"
+button.style.top="0px"
+function notyet(){
+    button.style.left= Math.random() * (window.innerWidth - 0)+"px"
+    button.style.top= Math.random() * (window.innerHeight - 0)+"px"
+}
+</script>
+</html>
